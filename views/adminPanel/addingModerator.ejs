@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Dashtreme - Multipurpose Bootstrap4 Admin Template</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+  <!-- skins CSS-->
+  <link href="assets/css/skins.css" rel="stylesheet"/>
+  
+</head>
+
+<body>
+
+   <div class="container-fluid">
+   <!-- Breadcrumb-->
+  <div class="row pt-2 pb-2">
+     <div class="col-sm-9">
+       <h4 class="page-title">Moderator</h4>
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="javaScript:void();">Dashtreme</a></li>
+         <li class="breadcrumb-item"><a href="javaScript:void();">Moderator</a></li>
+      </ol>
+   </div>
+   <div class="col-sm-3">
+    <div class="btn-group float-sm-right">
+     <button type="button" class="btn btn-light waves-effect waves-light"><i class="fa fa-cog mr-1"></i> Setting</button>
+     <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown">
+     <span class="caret"></span>
+     </button>
+     <div class="dropdown-menu">
+       <a href="javaScript:void();" class="dropdown-item">Action</a>
+       <a href="javaScript:void();" class="dropdown-item">Another action</a>
+       <a href="javaScript:void();" class="dropdown-item">Something else here</a>
+       <div class="dropdown-divider"></div>
+       <a href="javaScript:void();" class="dropdown-item">Separated link</a>
+     </div>
+   </div>
+  </div>
+  </div>
+ <!-- End Breadcrumb-->
+
+ 
+
+ <div class="card-body">
+   <div class="card-title">Yangi Moderator qo'shish</div>
+   <hr>
+    <form name="addingModerator"  method="POST" action="/addingModerator">
+   <div class="form-group row">
+    <label for="input-26" class="col-sm-2 col-form-label">Ism</label>
+    <div class="col-sm-10">
+    <input type="text" name="name" id="ism" class="form-control form-control-rounded" id="input-26" placeholder="Ismingizni kiriting"  required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="input-27" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+    <input type="email" name="email" id="email" class="form-control form-control-rounded" id="input-27" placeholder="Elektron manzilingizni kiriting"  required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="input-28" class="col-sm-2 col-form-label">Telefon</label>
+    <div class="col-sm-10">
+    <input type="text" id="telefon" class="form-control form-control-rounded" id="input-28" placeholder="Telefon raqamingizni kiriting" name="telephone" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="input-29" class="col-sm-2 col-form-label">Parol</label>
+    <div class="col-sm-10">
+    <input type="password" id="parol" class="form-control form-control-rounded" id="input-29" placeholder="Parolni kiriting" name="password" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="input-30" class="col-sm-2 col-form-label">Parolni tasdiqlash</label>
+    <div class="col-sm-10">
+    <input type="password" id="parol2" class="form-control form-control-rounded" id="input-30" placeholder="Parolni tekshiring" name="rePassword" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="input-30" class="col-sm-2 col-form-label">Roleni tasdiqlash</label>
+    <div class="col-sm-10">
+      <input value="moderator" type="text" id="form" class="form-control" name="role" required hidden>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10">
+    <div class="icheck-material-primary">
+    <input type="checkbox" id="user-checkbox6" checked="">
+    <label for="user-checkbox6">Eslab qol</label>
+    </div>
+    </div>
+  </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10">
+    <button onclick="add()" type="button" class="btn btn-primary btn-round px-5"><i class="icon-lock"></i> Registratsiya</button>
+    </div>
+  </div>
+  </form>
+  <!-- <button onclick="add()">OK</button> -->
+ </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+ 
+ 
+<script>
+    function add(){
+      axios({
+        method: "POST",
+        url: '/addingModerator',
+        data: {
+          name: document.getElementById('ism').value,
+          email: document.getElementById("email").value,
+          telephone: document.getElementById("telefon").value,
+          password: document.getElementById("parol").value,
+          rePassword: document.getElementById("parol2").value,
+          role: document.getElementById("form").value
+        }
+      })
+      console.log(document.getElementById('ism').value)
+      console.log(document.getElementById("email").value)
+      console.log(document.getElementById("telefon").value)
+      console.log(document.getElementById("parol").value)
+      console.log(document.getElementById("parol2").value)
+      console.log(document.getElementById("form").value)
+    }
+</script>
+<!--start overlay-->
+     <div class="overlay toggle-menu"></div>
+   <!--end overlay-->
+   </div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+ 
+<!-- simplebar js -->
+<script src="assets/plugins/simplebar/js/simplebar.js"></script>
+
+<!-- sidebar-menu js -->
+<script src="assets/js/sidebar-menu.js"></script>
+
+<!-- Custom scripts -->
+<script src="assets/js/app-script.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Dashtreme - Multipurpose Bootstrap4 Admin Template</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+  <!-- skins CSS-->
+  <link href="assets/css/skins.css" rel="stylesheet"/>
+  
+</head>
+
+<body>
+
+   <div class="container-fluid">
+   <!-- Breadcrumb-->
+  <div class="row pt-2 pb-2">
+     <div class="col-sm-9">
+       <h4 class="page-title">Moderator</h4>
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="javaScript:void();">Dashtreme</a></li>
+         <li class="breadcrumb-item"><a href="javaScript:void();">Moderator</a></li>
+      </ol>
+   </div>
+   <div class="col-sm-3">
+    <div class="btn-group float-sm-right">
+     <button type="button" class="btn btn-light waves-effect waves-light"><i class="fa fa-cog mr-1"></i> Setting</button>
+     <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown">
+     <span class="caret"></span>
+     </button>
+     <div class="dropdown-menu">
+       <a href="javaScript:void();" class="dropdown-item">Action</a>
+       <a href="javaScript:void();" class="dropdown-item">Another action</a>
+       <a href="javaScript:void();" class="dropdown-item">Something else here</a>
+       <div class="dropdown-divider"></div>
+       <a href="javaScript:void();" class="dropdown-item">Separated link</a>
+     </div>
+   </div>
+  </div>
+  </div>
+ <!-- End Breadcrumb-->
+
+ <a href="/addingModerator"><button type="button" class="btn btn-outline-info waves-effect waves-light m-1"><i aria-hidden="true" class="fa fa-plus"> </i> Moderator qo'shish</button></a>
+
+ <table style="margin-top: 30px;" class="table align-items-center table-flush">
+   <thead>
+    <tr>
+      <th>Rasm</th>
+      <th>Moderator</th>
+      <th>Pochta</th>
+      <th>Telefon</th>
+      <th>Sana</th>
+      <th>Sozlamalar</th>
+    </tr>
+    </thead>
+<tbody>
+  <% for (let item of users) { %>
+  <tr>
+    <td>
+      <img alt="Image placeholder" src="https://via.placeholder.com/110x110" class="product-img">
+    </td>
+    <td><%= item.name %></td>
+    <td><%= item.email %></td>
+    <td>
+      <%= item.telephone %>
+    </td>
+    <td></td>
+    <td><a href="/editModerator"><button style="border: none; border-radius: 5px; padding: 6px 6px 6px 10px; "><i class="fa fa-cog mr-1"></i></button></a></td>
+    </tr>
+    <% } %>
+
+
+
+
+<!-- <tr>
+     <td>
+       <img alt="Image placeholder" src="https://via.placeholder.com/110x110" class="product-img">
+     </td>
+     <td>Ladies Purse</td>
+     <td>$3,420 USD</td>
+     <td>
+       <span class="badge-dot">
+         <i class="bg-danger"></i> pending
+       </span>
+     </td>
+     <td>
+<div class="progress shadow" style="height: 4px;">
+           <div class="progress-bar gradient-ibiza" role="progressbar" style="width: 80%"></div>
+        </div>
+     </td>
+     <td><a href="/editModerator"><button style="border: none; border-radius: 5px; padding: 6px 6px 6px 10px; "><i class="fa fa-cog mr-1"></i></button></a></td>
+    </tr> -->
+  </tbody></table>
+
+<!--start overlay-->
+     <div class="overlay toggle-menu"></div>
+   <!--end overlay-->
+   </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+	
+  <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+  
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+  
+	
+</body>
+</html>

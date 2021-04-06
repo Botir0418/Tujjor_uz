@@ -1,0 +1,103 @@
+footer{
+    width: 100%;
+    padding: 30px 100px;
+}
+
+
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #242425;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two  {
+    border-width: 1px;
+    margin-top: 20px;
+}
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: red;
+    text-decoration: none;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 45px;
+    color: #3a58bb;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+
+.btn{
+    margin-top: 20px;
+    background: red;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+    background: rgb(60, 60, 179); 
+}
+
+.new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color:white;
+}
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #000;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: #20439e;
+}
+
+/*************footer End*****************/
+
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+    /* z-index: -1; */
+}
+
