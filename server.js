@@ -17,6 +17,8 @@ app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
 app.use(express.static(path.join(__dirname, "public")))
 app.use(expressLayouts)
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(morgan(':method :url :status :response-time'))
 app.use(methodOverride("_method", {
     methods: ['POST', 'GET','PUT','DELETE']
