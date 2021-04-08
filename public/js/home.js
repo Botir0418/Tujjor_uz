@@ -99,3 +99,28 @@ setInterval(() => {
   }
   show()
 }, 3000);
+
+
+// Samandar
+
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+
+btn1.addEventListener('click', (e) => {
+      btn1.classList.toggle("s-click");
+      btn2.classList.remove("s-click");
+      btn3.classList.remove("s-click");
+})
+
+btn2.addEventListener('click', (e) => {
+    btn1.classList.remove("s-click");
+    btn2.classList.toggle("s-click");
+    btn3.classList.remove("s-click");
+})
+
+btn3.addEventListener('click', (e) => {
+    btn1.classList.remove("s-click");
+    btn2.classList.remove("s-click");
+    btn3.classList.toggle("s-click");
+})
