@@ -8,7 +8,7 @@ const cors = require("cors")
 const i18n = require("i18n-express")
 const morgan = require('morgan')
 const session = require("express-session")
-const connectDB = require("./bin/db")
+const connectDB = require("./config/config")
 connectDB()
 
 app.use(bodyParser.json())
@@ -35,8 +35,17 @@ app.use(i18n({
     textsVarName: 'translation'
 }))
 
-app.use("/", require("./routes/pageRouter"))
-app.use("/", require("./routes/adminRouter"))
+
+
+
+// ---------------ROURER------------------
+app.use('/api', require('./routes/orderRouter'))
+app.use('/api', require('./routes/userRouter'))
+app.use('/api', require('./routes/productController'))
+app.use('/api', require('./routes/paymentRouter'))
+app.use('/api', require('./routes/catagoryRouter'))
+
+
 const port = 3040
 app.listen(port, (req, res) => {
     console.log(`Server is working in ${port} th port`)
