@@ -1,34 +1,46 @@
-
+*,p,h4{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 /* Slider box */
 
 .sh_slider_box{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
+    margin: 30px 0;
 }
 
 .sh_left_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
-    flex: 3;
+    flex: 4;
 }
 
 .sh_right_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     flex: 1;
 }
 
 /* Right box */
 
 .sh_flash_sale{
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: flex-end; */
     /* background-color: red; */
     height: 70vh;
-    padding: 20px;
+    padding: 20px 0 20px 20px;
     margin-left: 20px;
 }
 
 .sh_flash_text{
+    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +48,7 @@
 
 .sh_flash_text i{
     font-size: 20px;
-    margin: 5px;
+    margin: 0 5px;
     cursor: pointer;
 }
 
@@ -48,10 +60,114 @@
     background-color: crimson;
 }
 
+
+.sh_flash_content{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.sh_flash_content:hover{
+    height: 45vh;
+    box-shadow: 0 0 30px 0 grey;
+}
+
+.sh_flash_content:hover ~ .sh_product_stats .sh_archibald{
+    opacity: 0;
+}
+
+.sh_flash_content img{
+    width: 130px;
+}
+
+.sh_icon_box{
+    display: flex;
+    margin-top: 20px;
+}
+
+.sh_icon_boxes{
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 7px;
+}
+
+.sh_product_stats{
+    position: absolute;
+    bottom: 5px;
+    justify-content: flex-end;
+}
+
+.sh_product_stats p{
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.sh_archibald{
+    transition: .3s;
+    font-weight: 700;
+}
+
+.sh_stars i{
+    color: rgb(212, 212, 13);
+}
+
+.sh_banner{
+    padding: 20px 0 0 20px;
+    margin-left: 20px;
+}
 /* Left box */
 
 .sh_slider{
     width: 100%;
+}
+
+.sh_icons{
+    position: relative;
+    transition: .5s;
+}
+
+.sh_top_brand{
+    height: 200px;
+    padding: 10px;
+}
+
+.sh_icons_one{
+    /* right: 0; */
+    top: 0;
+    position: absolute;
+    display: flex;
+    transition: .5s;
+}
+
+.sh_icons_two{
+    /* right: 0; */
+    top: 80px;
+    position: absolute;
+    display: flex;
+    transition: .5s;
+    z-index: 1000;
+}
+
+.sh_sony{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sh_sony img{
+    width: 49%;
 }
 
 #sh_container{
@@ -60,6 +176,7 @@
     height: 70vh  ;
     margin-bottom: 50px;
 }
+
 #sh_container a{
     text-decoration: none;
     color: #fff;

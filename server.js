@@ -35,7 +35,7 @@ app.use(i18n({
     textsVarName: 'translation'
 }))
 
-
+app.use("/", require("./routes/pageRouter"))
 
 
 // ---------------ROURER------------------
