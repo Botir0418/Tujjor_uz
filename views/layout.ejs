@@ -22,24 +22,24 @@
     <header class="s-header">
         <nav>
             <ul class="s-nav-link-left">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="#"><%=translation.bosh%> </a></li>
+                <li><a href="#"><%=translation.xususiyatlari%></a></li>
+                <li><a href="#"><%=translation.mahsulotlar%></a></li>
+                <li><a href="#"><%=translation.dokon%></a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Pages</a></li>
+                <li><a href="#"><%=translation.sahifalar%></a></li>
             </ul>
 
 
             <ul class="s-nav-link-right">
-                <li><a href="#">Track Your Order</a></li>
-                <li><a href="#">Checkout</a></li>
-                <li><a href="#">Terms of use</a></li>
+                <li><a href="#"><%=translation.buyurtmani_kuzatish%></a></li>
+                <li><a href="#"><%=translation.nazorat%></a></li>
+                <li><a href="#"><%=translation.foydalanish_shartlari%></a></li>
                 <li>
-                    <select name="#" id="#">
-                        <option value="uz"><a href="/?clang=uz">Uz</a></option>
-                        <option value="eng"><a href="/?clang=eng">Eng</a></option>
-                    </select>
+                    <div class="dropDown">
+                        <a href="/?clang=uz">UZ</a>
+                        <a href="/?clang=eng">ENG</a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -54,7 +54,7 @@
             </li>
             <li class="s-search-category">
                 <select name="#" id="#">
-                    <option value="#">Select a category</option>
+                    <option value="#"><%=translation.category_tanlash%></option>
                     <option value="#">lorem ipsum</option>
                     <option value="#">lorem ipsum</option>
                     <option value="#">lorem ipsum</option>
@@ -62,8 +62,8 @@
                     <option value="#">lorem ipsum</option>
                 </select>
                 <form action="#">
-                    <input type="search" name="search" placeholder="What are you searching for?...">
-                    <button type="submit">Search</button>
+                    <input type="search" name="search" placeholder="<%=translation.nimadir_izlash%>">
+                    <button type="submit"><%=translation.qidirsh%></button>
                 </form>
 
             </li>
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <div class="s-text-my-cart">
-                        <p>My Cart</p>
+                        <p><%=translation.mening_savatim%></p>
                         <h6>$0.00</h6>
                     </div>
                 </div>
@@ -174,8 +174,8 @@
                         </div>
                     </div>
                     <div class="s-text-signUp-cart">
-                        <p>Hello</p>
-                        <h6 class="s-account-me"> Sign me up</h6>
+                        <p><%=translation.salom%></p>
+                        <h6 class="s-account-me"><%=translation.royhatdan_ot%></h6>
                     </div>
                 </div>
             </li>
@@ -194,57 +194,57 @@
 
             <div class="col-lg-3 ">
                 <div class="f_widget company_widget ">
-                    <h3 class="f-title f_600 t_color f_size_18">Newsleter Subscribe</h3>
-                    <p>Sign up to our newsletter & always be the first to be informed.</p>
+                    <h3 class="f-title f_600 t_color f_size_18"><%=translation.obuna_bol%></h3>
+                    <p><%=translation.xabardor_bol%></p>
                     <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                        <input type="email" name="EMAIL" class="form-control memail" placeholder=" Enter your E-mail">
-                        <button class="btn " type="submit">SIGN UP</button>
+                        <input type="email" name="EMAIL" class="form-control memail" placeholder="<%=translation.email_kirit%>">
+                        <button class="btn " type="submit"><%=translation.royhatdan_ot%></button>
                     </form>
                 </div>
             </div>
             <div class="col-lg-2 ">
                 <div class="f_widget about-widget pl_70 ">
-                    <h3 class="f-title f_600 t_color f_size_18">My Account</h3>
+                    <h3 class="f-title f_600 t_color f_size_18"><%=translation.mening_akk%></h3>
                     <ul class="list-unstyled f_list">
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Categories</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Blog & News</a></li>
+                        <li><a href="#"><%=translation.mening_akk%></a></li>
+                        <li><a href="#"><%=translation.categoriyalar%></a></li>
+                        <li><a href="#"><%=translation.dokon%></a></li>
+                        <li><a href="#"><%=translation.blog_yangilik%></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2 ">
                 <div class="f_widget about-widget pl_70 ">
-                    <h3 class="f-title f_600 t_color f_size_18">Information</h3>
+                    <h3 class="f-title f_600 t_color f_size_18"><%=translation.malumot%></h3>
                     <ul class="list-unstyled f_list">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy & Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Manufactures</a></li>
+                        <li><a href="#"><%=translation.biz_haqimizda%></a></li>
+                        <li><a href="#"><%=translation.yetkazish_haqda_malumot%></a></li>
+                        <li><a href="#"><%=translation.maxfiylik%></a></li>
+                        <li><a href="#"><%=translation.qoida_shart%></a></li>
+                        <li><a href="#"><%=translation.ishlab_chiqarish%></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2 ">
                 <div class="f_widget about-widget pl_70 ">
-                    <h3 class="f-title f_600 t_color f_size_18">Top Categories</h3>
+                    <h3 class="f-title f_600 t_color f_size_18"><%=translation.top_category%></h3>
                     <ul class="list-unstyled f_list">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#"><%=translation.aloqa%></a></li>
+                        <li><a href="#"><%=translation.savol_javob%></a></li>
+                        <li><a href="#"><%=translation.foydalanish_sharti%></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 ">
                 <div>
-                    <h3 class="f-title f_600 t_color f_size_18">Contact info</h3>
+                    <h3 class="f-title f_600 t_color f_size_18"><%=translation.aloqa_malumoti%></h3>
                     <p>(+99) 123 – 456 -789 71 </p>
                     <p>contact@example.com</p>
                 </div>
             </div>
             <div class="col-lg-3 ">
                 <div class="f_widget social-widget pl_70 ">
-                    <h3 class="f-title f_600 t_color f_size_18">Connect with Megabuy</h3>
+                    <h3 class="f-title f_600 t_color f_size_18"><%=translation.tujjor_bn_boglaning%></h3>
                     <div class="f_social_icon">
                         <a href="#"><i class="fa fa-facebook"></i> </a>
                         <a href="#"><i class="fa fa-twitter"></i> </a>
